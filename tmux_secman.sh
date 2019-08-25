@@ -1,3 +1,11 @@
+programs=(tmux)
+for program in "${programs[@]}"; do
+    if ! command -v "$program" > /dev/null 2>&1; then
+        sudo apt-get update
+        sudo apt-get install "$program" -y
+    fi
+done
+
 tmux list-session > ./tmux_session_list.dat
 clear
 if [ -s tmux_session_list.dat ]; then
