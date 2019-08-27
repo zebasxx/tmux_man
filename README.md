@@ -6,9 +6,9 @@ Simple collection of scripts to manage tmux session with a ssh session manager. 
 
 and it will:
 
-if tmux is not installed, it install it
-if Script is not in home folder, it clone the repo
-if there is no tmux session it creates one in detached mode
-it will connect to the last disconnected tmux session
+* if tmux is not installed, it install it
+* if Script is not in home folder, it clone the repo
+* if there is no tmux session it creates one in detached mode
+* it will connect to the last disconnected tmux session
 
 Enjoy.
